@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>mp3n4</title>
+	</head>
+
+	<body>
+		<div id="app"></div>
+		<script>
+			const fs = require('fs')
+			const path = require('path')
+			const dirname = __dirname;
+		</script>
+		<script src="./dist/build.js"></script>
+		<script>
+			(function() {
+				var html=document.querySelector('html');
+				window.onresize = function() {
+					html.style.height=window.innerHeight+'px';
+				}
+			})()
+		</script>
+	</body>
+
+</html>
